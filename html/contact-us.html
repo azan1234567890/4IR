@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4irinc">
+    <meta name="keywords" content="4irinc">
+    <meta name="author" content="4irinc">
+    <link rel="icon" href="../assets/images/4IR Logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/images/4IR Logo.png" type="image/x-icon" />
+    <title>Fourth Industrial Revolution Inc.</title>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+
+    <!-- remixicon css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/remixicon.css">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/iconsax.css" />
+
+    <!-- animation css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/aos.css">
+
+    <!-- swiper slider css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/swiper-bundle.min.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="/assets/css/landing.css">
+
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/pages/contact.css">
+
+    <style>
+        @media screen and (max-width:768px) {
+            header #logo-img {
+                height: 70px;
+                margin-top: .4rem !important;
+                /* position: absolute; */
+                /* top: 1%; */
+            }
+        }
+    </style>
+
+</head>
+
+<body class="inner-bg">
+
+    <!-- Modal -->
+    <div class="modal fade text-center" id="demo-modal" tabindex="-1" aria-labelledby="demo-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3 text-white text-center" style="text-align: center;"
+                        id="demo-modalLabel">Book a <span style="color: #ffce00;">Demo</span></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
+                        style="min-width:320px;height:100%;"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-theme" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header start -->
+    <header>
+        <button class="navbar-toggler d-xl-none d-inline navbar-menu-button" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#primaryMenu">
+            <span class="navbar-toggler-icon">
+                <i class="iconsax" data-icon="text-align-justify"></i>
+            </span>
+        </button>
+        <a href="/home.html" style="margin-top: -1.4rem;">
+            <img src="../assets/images/4IR Logo main.png" class="img-fluid" id="logo-img" alt="logo">
+        </a>
+        <nav class="header-nav-middle">
+            <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
+                <div class="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+                    <div class="offcanvas-header navbar-shadow">
+                        <h5 class="mb-0">Back</h5>
+                        <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../home.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About Us</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./services.html" id="servicesLink">
+                                    Services
+                                </a>
+                                <button class="dropdown-toggle dropdown-arrow" id="servicesDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="./strategic_counselling.html">Strategic
+                                            Counseling</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://aitalkassist.com/">AITalkAssist</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/html/training_and_education.html">Training &
+                                            Education</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog-grid.html">Blog</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./contact-us.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div data-cursor="pointer" data-bs-toggle="modal" data-bs-target="#demo-modal"
+            style="position: relative; margin-top: -1.4rem;" class="btn btn-theme d-sm-inline-block d-none"><span>Book a
+                Demo</span></div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- home section start -->
+    <section id="home" class="section-b-space home-section">
+        <div class="container-fluid">
+            <div class="home-sec" style="text-align: center;
+            justify-content: center; display: flex;">
+                <div class="home-content" style="margin-top: 5rem;">
+                    <div>
+                        <!-- <h2 style="font-size: 20px; font-family: 'Play', sans-serif;">FOURTH INDUSTRIAL REVOLUTION INC
+                        </h2> -->
+                        <h1>BOOK A MEETING WITH 4IR</h1>
+                        <p class="text-white">Book a time to explore how we can advance your business with AI solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+
+    <!-- contact section start -->
+    <!-- <section class="contact-section pb-md-5 pb-0">
+        <div class="container">
+            <ul class="contact-box">
+                <li>
+                    <div class="contact-icon">
+                        <img src="../assets/svg/contact/message.svg" class="img-fluid" alt="message">
+                    </div>
+                    <h3>Email</h3>
+                    <h4>info@4irconsultants.com</h4>
+                </li>
+                <li>
+                    <div class="contact-icon">
+                        <img src="../assets/svg/contact/contact.svg" class="img-fluid" alt="message">
+                    </div>
+                    <h3>Phone Number</h3>
+                    <h4>(888) 212-9087</h4>
+                    <h4>(949) 301-9110</h4>
+                </li>
+            </ul>
+            <div class="contact-details">
+                <div class="row g-lg-5 g-4">
+                    <div class="col-xl-7 col-lg-6" style="width: 100%;">
+                        <form id="contact-form" class="auth-form">
+                            <div class="row g-4">
+                                <div class="col-sm-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="number" class="form-label">Phone number</label>
+                                    <input type="tel" class="form-control" id="number" name="number" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Additional Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="3"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" id="send-email" class="btn-solid">Send message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+        </div>
+    </section> -->
+    <!-- contact section end -->
+
+    <section class="section-b-space">
+        <div class="container">
+            <div class="service-info">
+                <div>
+                    <div class="title">
+                        <h4 style="color: #00BDFF; margin-bottom: 1rem;">Connect with Us to Accelerate Innovation</h4>
+                        <h2 class="text-white"><span style="color: #ffce00;">Let’s Connect</span> and Drive Innovation
+                            Together
+                        </h2>
+                    </div>
+                    <p class="service_paragraph text-white" style="margin-bottom: 2rem;">We’re excited to help you
+                        explore the possibilities of AI and digital transformation for your business. To ensure you get
+                        the most out of our
+                        conversation, we invite you to schedule a meeting at a time that suits you.</p>
+                    <p class="service_paragraph text-white" style="margin-bottom: 2rem;">Simply use the Calendly
+                        scheduler below to book a one-on-one consultation with our team. Together, we’ll discuss your
+                        unique needs,
+                        challenges, and how we can support your journey through the Fourth Industrial Revolution.
+                    </p>
+                </div>
+            </div>
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget"
+                data-url="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
+                style="min-width:320px;height:700px;"></div>
+        </div>
+    </section>
+
+
+    <!-- contact us start -->
+    <section class="info-section section-b-space">
+        <div class="container">
+            <div class="info-box" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                <h2 class="text-white">Get Your Free Demo of AI TALK ASSIST Today!</h2>
+
+                <button class="info-btn btn d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#demo-modal">Book
+                    a
+                    Demo</button>
+            </div>
+        </div>
+    </section>
+    <!-- contact us end -->
+
+
+    <!-- footer section start-->
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-main">
+                    <a href="#" class="footer-logo"><img src="../assets/images/4IR Logo main.png" id="logo-img"
+                            class="img-fluid" alt=""></a>
+                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Enter your mail">
+                            <a href="" data-cursor="pointer" class="btn-basic">Subscribe</a>
+                        </div>
+                    </form>
+                    <ul class="social-links">
+                        <li><a data-cursor="pointer" target="_blank" href="https://www.facebook.com/4IRinc"><img
+                                    src="../assets/svg/social/fb.svg" class="img-fluid" alt="facebook"></a></li>
+                        <li><a data-cursor="pointer" target="_blank"
+                                href="https://www.linkedin.com/company/fourth-industrial-revolution-inc/"><img
+                                    src="../assets/svg/social/linkedin.svg" class="img-fluid" alt="linkedin"></a></li>
+                        <li><a data-cursor="pointer" target="_blank" href="https://www.youtube.com/@BarryKrevoy"><img
+                                    src="../assets/svg/youtube.svg" class="img-fluid" alt="youtube"></a></li>
+                    </ul>
+                </div>
+                <div class="link-section">
+                    <div class="footer-title">
+                        <img src="../assets/svg/star.svg" class="img-fluid" alt="star">
+                        Quick Link
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a data-cursor="pointer" href="/home.html">Home</a></li>
+                            <li><a data-cursor="pointer" href="/html/blog-grid.html">Blog</a></li>
+                            <li><a data-cursor="pointer" href="/html/services.html">Services</a></li>
+                            <li><a data-cursor="pointer" href="./contact-us.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="link-section">
+                    <div class="footer-title">
+                        <img src="../assets/svg/star.svg" class="img-fluid" alt="star">
+                        Our service
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a data-cursor="pointer" href="./strategic_counselling.html">Strategic Counselling</a>
+                            </li>
+                            <li><a data-cursor="pointer" href="https://aitalkassist.com/">AI Talk Assist</a></li>
+                            <li><a data-cursor="pointer" target="_blank"
+                                    href="/html/training_and_education.html">Training &
+                                    Education</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="link-section">
+                    <div class="footer-title">
+                        <img src="./assets/svg/star.svg" class="img-fluid" alt="star">
+                        Our company
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a data-cursor="pointer" href="login.html">Login</a></li>
+                            <li><a data-cursor="pointer" href="blog-listing.html">Blog listing</a></li>
+                            <li><a data-cursor="pointer" href="blog-grid.html">Blog Grid</a></li>
+                            <li><a data-cursor="pointer" href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <div class="footer-copyright">
+                <h4>@2024 All the Copyright Reserved.</h4>
+                <ul class="footer-links">
+                    <li><a href="/html/privacy.html">Privacy Policy </a></li>
+                    <li><a href="/html/terms.html">Terms & Condition </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end-->
+
+
+
+    <!-- Tap To Top Button Start -->
+    <div class="tap-to-top-box hide">
+        <button class="tap-to-top-button"><i class="iconsax" data-icon="chevron-up"></i></button>
+    </div>
+    <!-- Tap To Top Button End -->
+
+
+    <!--custom cursor start  -->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!--custom cursor start  -->
+
+    <script src="/assets/js/pages/dropdown.js"></script>
+
+    <script src="/assets/js/pages/email.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <!-- Calendly inline widget begin -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "F0BJDnf51VvvepoOz",
+            });
+        })();
+    </script>
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slider js-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom-slider.js"></script>
+
+    <!-- custom cursor -->
+    <script src="../assets/js/custom-cursor.js"></script>
+
+    <!-- aos animation -->
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/custom-aos.js"></script>
+
+    <!-- header sticky js -->
+    <script src="../assets/js/header_sticky.js"></script>
+
+    <!-- iconsax js -->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- Theme js-->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
